@@ -1,0 +1,286 @@
+/*elements*/
+body {
+    background-color: #5A6C6D;
+   
+   background-image: url(trianglify4.png);
+    background-size: 100%;
+   /* background-image: url(../imatges/imatge2.jpg);
+    background-repeat: no-repeat;
+     background-size:100% 100%;*/
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+a:hover{
+   
+    color:#10585B;
+}
+
+p{
+    color: rgb(220,210,220);;
+}
+
+p2{
+    font-size: 30px;
+}
+
+h3{
+    color: #0A4F5A;
+}
+/*contenidors*/
+#contenidor-general {
+    display: block;
+    width: 80%;
+    margin: auto;
+    background-color: rgb(	77, 124, 124,0.5);
+    font-family: 'Lato', sans-serif;
+    
+}
+
+#contenidor-xxss {
+    margin: 5px;
+    padding: 5px;
+    
+    text-align: right;
+    color: black;
+}
+
+.contenidor-text {
+    margin: 5px;
+    padding: 5px;
+   
+    font-family: 'Lato', sans-serif;
+    color: rgb(220,210,220);
+     
+}
+
+.contenidor-flex {
+    margin: 5px;
+    padding: 5px;
+  
+    display: flex;
+    flex-wrap: wrap;
+    
+    color: black;
+    
+    
+
+}
+
+.container-display{
+    
+  /*  max-width:50%;
+    max-height:50%;
+    min-height: 40%;
+    min-width: 40%; */
+}
+
+
+.contenidor-texxt{
+    margin: 5px;
+    padding: 10px;
+    
+}
+
+
+.contenidor-imatge {
+    margin: 5px;
+    padding: 5px;
+   align-content: center;
+    
+   
+}
+
+#contenidor-footer {
+    padding: px;
+
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: rgba(165, 208, 225,0.5);
+}
+
+.contenidor-boto {
+    flex: 1 150px;
+    margin: 5px;
+    padding: 5px;
+   
+    font-family: 'Lato', sans-serif;
+    color:darkblue;
+    background: #10585B;
+    text-align: center;
+    
+    
+}
+
+.contenidor-boto:hover{
+    
+background: #65A6AA;
+text-align: center;
+}
+
+.item {
+    flex-grow: <number>;
+}
+
+.container {
+    flex-wrap: nowrap | wrap | wrap-reverse;
+}
+
+.item {
+    align-self: auto | flex-start | flex-end | center | baseline | stretch;
+}
+
+.container {
+    align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+}
+
+/*ICONES*/
+
+.fa-instagram {
+    font-size: 36px;
+    color: #0A4F5A;
+    margin: 10px;
+
+}
+
+/*IMATGES*/
+
+#textimg{
+    display: block;
+    position: relative;
+    left: 150px;
+}
+
+.imatge1 {
+/*
+    width: 100%;
+    align-content: center;*/
+}
+
+.imatge2 {
+    display: none;
+
+}
+
+@media only screen and (max-width:1000px) {
+    .imatge1 {
+        display: none;
+    }
+
+    .imatge2 {
+        width: 100%;
+        display: block;
+        left:0px;;
+    }
+    
+    #textimg{
+        left:100px;
+    }
+}
+
+.footer {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgba(165, 208, 225);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+    background-color: #10585B;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 133px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #10585B;
+    color: aliceblue
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img{
+    position: relative;
+    left: 25%;
+}
